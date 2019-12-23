@@ -1,0 +1,9 @@
+version: "3.5"
+services:
+  txspa-web:
+    build: .
+    volumes:
+      - /usr/app/node_modules
+      - ".:/usr/app"
+    ports:
+      - "127.0.0.1:3001:3000"
